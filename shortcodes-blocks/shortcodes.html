@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shortcodes — Vista Portfolio Docs</title>
+  <link rel="stylesheet" href="../assets/docs.css" />
+</head>
+<body>
+<header class="docs-header">
+  <div class="docs-header__inner">
+    <a class="docs-brand" href="../index.html">
+      <span class="docs-brand__logo" aria-hidden="true">
+        <img src="../assets/images/logo-vista.svg" alt="" width="35" height="31" />
+      </span>
+      <span class="docs-brand__text">
+        <span class="docs-brand__name"><strong>Vista</strong><em>Portfolio</em></span>
+        <span class="docs-brand__tag">Docs</span>
+      </span>
+    </a>
+    <ul class="docs-nav">
+      <li><a href="../getting-started/index.html">Getting Started</a></li><li><a href="../plugin-settings/index.html">Settings</a></li><li><a href="../features/index.html">Features</a></li><li><a href="../shortcodes-blocks/index.html" aria-current="page">Blocks</a></li><li><a href="../how-to-use/index.html">How to Use</a></li>
+    </ul>
+  </div>
+</header>
+<div class="docs-wrap docs-layout">
+<aside class="docs-sidebar">
+  <h2>Shortcodes & Blocks</h2>
+  <ul>
+    <li><a href="index.html">Overview</a></li><li><a href="project-collection.html">Project Collection</a></li><li><a href="project-filter.html">Project Filter</a></li><li><a href="related-and-navigation.html">Related & Navigation</a></li><li><a href="saved-layout-block.html">Saved Layout Block</a></li><li><a href="shortcodes.html" aria-current="page">Shortcodes</a></li><li><a href="elementor-widgets.html">Elementor Widgets</a></li>
+  </ul>
+</aside>
+  <main class="docs-content">
+    <p class="docs-breadcrumb"><a href="../index.html">Docs</a> / <a href="index.html">Shortcodes & Blocks</a> / Shortcodes</p>
+    <h1>Shortcodes</h1>
+    
+<figure class="docs-figure">
+  <img src="../assets/images/saved-layout-editor.png" alt="Shortcode shown on Saved Layout editor" loading="lazy" width="1400" height="900" />
+  <figcaption>Copy shortcode from a Saved Layout</figcaption>
+</figure>
+<h2>Saved Layout</h2>
+<pre><code>[vista_layout id="123"]
+[vista_portfolio_layout id="123"]</code></pre>
+<p>Both aliases render the same Saved Layout.</p>
+<h2>Inline collection</h2>
+<pre><code>[vista_collection layout="grid" card_skin="standard" columns="3" per_page="6"]
+[vista_portfolio layout="grid" columns="3"]</code></pre>
+<table>
+  <thead><tr><th>Attribute</th><th>Aliases</th><th>Default</th><th>Notes</th></tr></thead>
+  <tbody>
+    <tr><td><code>layout</code></td><td></td><td><code>grid</code></td><td>grid, list, masonry, slider</td></tr>
+    <tr><td><code>columns</code></td><td><code>col</code></td><td>3</td><td></td></tr>
+    <tr><td><code>gap</code></td><td></td><td>24</td><td>Pixel gap</td></tr>
+    <tr><td><code>per_page</code></td><td><code>number</code></td><td>6</td><td></td></tr>
+    <tr><td><code>orderby</code></td><td></td><td>from Settings</td><td>date, title, modified</td></tr>
+    <tr><td><code>order</code></td><td></td><td>from Settings</td><td>asc / desc</td></tr>
+    <tr><td><code>featured</code></td><td></td><td>0</td><td>1 = featured only</td></tr>
+    <tr><td><code>pagination</code></td><td></td><td>1</td><td></td></tr>
+    <tr><td><code>show_nav</code></td><td></td><td>1</td><td>Slider arrows</td></tr>
+    <tr><td><code>card_skin</code></td><td><code>skin</code></td><td>standard</td><td></td></tr>
+    <tr><td><code>autoplay</code></td><td></td><td>0</td><td>Slider</td></tr>
+    <tr><td><code>autoplay_speed</code></td><td></td><td>4000</td><td>Milliseconds</td></tr>
+    <tr><td><code>infinite</code></td><td></td><td>0</td><td>Slider loop</td></tr>
+  </tbody>
+</table>
+
+    <nav class="docs-pager"><a class="docs-pager__prev" href="saved-layout-block.html"><span class="docs-pager__label"><span>Previous</span>Saved Layout Block</span></a><a class="docs-pager__next" href="elementor-widgets.html"><span class="docs-pager__label"><span>Next</span>Elementor Widgets</span></a></nav>
+  </main>
+</div>
+<footer class="docs-footer">
+  <div class="docs-footer__inner">
+    <p>&copy; 2026 Vista Portfolio</p>
+  </div>
+</footer>
+<script src="../assets/docs.js"></script>
+</body>
+</html>
